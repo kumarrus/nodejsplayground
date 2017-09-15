@@ -19,9 +19,16 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
+    "jshint": "^2.9.5",
+    "pg": "^6.4.2",
+    "pg-hstore": "^2.3.2",
     "rc": "1.0.1",
     "sails": "~0.12.13",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "sails-hook-sequelize": "^1.0.1",
+    "sails-hook-sequelize-blueprints": "^0.3.0",
+    "sails-postgresql": "^0.11.4",
+    "sequelize": "^3.30.4"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -33,5 +40,10 @@
     "url": "git://github.com/anonymous node/sails user/testApp.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "",
+  "jshintConfig": {
+    "predef": [
+      "sails"
+    ]
+  }
 }
