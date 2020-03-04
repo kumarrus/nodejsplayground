@@ -139,6 +139,8 @@
   function getSources(doc, styles) {
     var svgInfo = [],
         svgs = doc.querySelectorAll("svg.rush");
+    
+    console.log(svgs);
 
     styles = (styles === undefined) ? "" : styles;
 
